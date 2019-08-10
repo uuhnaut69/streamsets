@@ -5,7 +5,7 @@
     "pipelineId" : "binlogkafkaconsumertoelastic5451dc7c-738b-492d-8ba0-6e6150219318",
     "title" : "Binlog_kafka_consumer_to_elastic",
     "description" : "",
-    "uuid" : "f180192d-cf84-4277-b03a-6b574db80e9a",
+    "uuid" : "2b48e2ce-88e5-4f05-b1a7-06f539b9959f",
     "configuration" : [ {
       "name" : "executionMode",
       "value" : "STANDALONE"
@@ -474,7 +474,7 @@
         "value" : "streamsetsDataCollector"
       }, {
         "name" : "kafkaConfigBean.topic",
-        "value" : "binlogKafka"
+        "value" : "job"
       }, {
         "name" : "kafkaConfigBean.produceSingleRecordPerMessage",
         "value" : false
@@ -551,10 +551,10 @@
         "value" : "UTC"
       }, {
         "name" : "elasticSearchConfig.indexTemplate",
-        "value" : "mysqlbinlogs"
+        "value" : "jobs"
       }, {
         "name" : "elasticSearchConfig.typeTemplate",
-        "value" : "mysqlbinlogs"
+        "value" : "jobs"
       }, {
         "name" : "elasticSearchConfig.docIdTemplate",
         "value" : null
@@ -657,21 +657,21 @@
       "title" : "Binlog_kafka_consumer_to_elastic",
       "description" : "",
       "created" : 1565252943937,
-      "lastModified" : 1565270553973,
+      "lastModified" : 1565428791320,
       "creator" : "admin",
       "lastModifier" : "admin",
       "lastRev" : "0",
-      "uuid" : "f180192d-cf84-4277-b03a-6b574db80e9a",
+      "uuid" : "2b48e2ce-88e5-4f05-b1a7-06f539b9959f",
       "valid" : true,
       "metadata" : {
-        "labels" : [ "kafka" ]
+        "labels" : [ "Binlog", "kafka" ]
       },
       "name" : "binlogkafkaconsumertoelastic5451dc7c-738b-492d-8ba0-6e6150219318",
       "sdcVersion" : "3.10.0",
       "sdcId" : "5cc9efca-b86b-11e9-b27b-310ff9f28ca6"
     },
     "metadata" : {
-      "labels" : [ "kafka" ]
+      "labels" : [ "Binlog", "kafka" ]
     },
     "statsAggregatorStage" : {
       "instanceName" : "statsAggregatorStageInstance",
@@ -980,12 +980,12 @@
         } ]
       } ]
     },
-    "issues" : {
-      "stageIssues" : { },
-      "pipelineIssues" : [ ],
-      "issueCount" : 0
-    },
     "previewable" : true,
+    "issues" : {
+      "issueCount" : 0,
+      "stageIssues" : { },
+      "pipelineIssues" : [ ]
+    },
     "valid" : true
   },
   "pipelineRules" : {

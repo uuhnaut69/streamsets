@@ -5,7 +5,7 @@
     "pipelineId" : "RdmsCDCcb54f676-5d66-4f1b-9d18-d033081ad2b1",
     "title" : "Binlog_to_Kafka_producer",
     "description" : "Rdms CDC kafka to elastic",
-    "uuid" : "37392db1-e7ac-415b-806e-eb6742afa4c8",
+    "uuid" : "74809b05-32b7-47c2-b20a-ade168fdfb44",
     "configuration" : [ {
       "name" : "executionMode",
       "value" : "STANDALONE"
@@ -285,7 +285,7 @@
         "value" : null
       }, {
         "name" : "config.includeTables",
-        "value" : null
+        "value" : "binlog.job"
       }, {
         "name" : "config.ignoreTables",
         "value" : null
@@ -431,7 +431,7 @@
         "value" : "*"
       }, {
         "name" : "conf.topic",
-        "value" : "binlogKafka"
+        "value" : "job"
       }, {
         "name" : "conf.partitionStrategy",
         "value" : "ROUND_ROBIN"
@@ -501,21 +501,21 @@
       "title" : "Binlog_to_Kafka_producer",
       "description" : "Rdms CDC kafka to elastic",
       "created" : 1565248070742,
-      "lastModified" : 1565269415464,
+      "lastModified" : 1565428493063,
       "creator" : "admin",
       "lastModifier" : "admin",
       "lastRev" : "0",
-      "uuid" : "37392db1-e7ac-415b-806e-eb6742afa4c8",
+      "uuid" : "74809b05-32b7-47c2-b20a-ade168fdfb44",
       "valid" : true,
       "metadata" : {
-        "labels" : [ "kafka" ]
+        "labels" : [ "Binlog", "kafka" ]
       },
       "name" : "RdmsCDCcb54f676-5d66-4f1b-9d18-d033081ad2b1",
       "sdcVersion" : "3.10.0",
       "sdcId" : "5cc9efca-b86b-11e9-b27b-310ff9f28ca6"
     },
     "metadata" : {
-      "labels" : [ "kafka" ]
+      "labels" : [ "Binlog", "kafka" ]
     },
     "statsAggregatorStage" : {
       "instanceName" : "statsAggregatorStageInstance",
@@ -824,12 +824,12 @@
         } ]
       } ]
     },
-    "issues" : {
-      "stageIssues" : { },
-      "pipelineIssues" : [ ],
-      "issueCount" : 0
-    },
     "previewable" : true,
+    "issues" : {
+      "issueCount" : 0,
+      "stageIssues" : { },
+      "pipelineIssues" : [ ]
+    },
     "valid" : true
   },
   "pipelineRules" : {
